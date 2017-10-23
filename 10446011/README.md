@@ -8,3 +8,6 @@
 - Git
 - Angular
 - Python
+
+Medium https://medium.com/@zxcv860513
+Facebook https://www.facebook.com/profile.php?id=100001834634083
