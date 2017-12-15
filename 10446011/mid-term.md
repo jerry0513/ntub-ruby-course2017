@@ -12,6 +12,12 @@
 ```ruby
 class Cat
   # 請完成實作
+  def initialize(name)
+    @name = name
+  end
+  def name
+    @name
+  end
 end
 
 kitty = Cat.new("kitty")
@@ -31,9 +37,11 @@ p profile["name"]
 ```
 
 會得到什麼結果? 為什麼?
+nil
+"name"是字串，要改成:name
 
 3. (5 分) 如果要在 1 到 100 的數字當中，任意取出 5 個不重複的亂數，你會怎麼做？
-
+puts [*1..100].sample(5)
 4. (10 分)
 ```ruby
 class Bank
@@ -46,6 +54,10 @@ Bank.transfer(10)
 ```
 
 上面這段程式碼執行後會發生什麼事？為什麼？如果有錯誤又該如何修正？
+發生錯誤，因為還沒產生實體
+將Bank.transfer(10)改成
+bank = Bank.new
+bank.transfer("10")
 
 5. (10 分) 請問以下方法：
 
@@ -54,6 +66,9 @@ link_to "刪除", products_path(product), method: :delete, class: "btn btn-defau
 ```
 
 `link_to` 方法共有幾個參數？為什麼？
+3
+body,url,html
+{刪除},{products_path(product),method: :delete}, {class: "btn btn-default"}
 
 6. (10 分) 在 Ruby 裡面常會看到冒號的寫法，例如：
 
@@ -78,6 +93,9 @@ user_profile = {name: "kk", age: 18, blood_type: :b_negative}
 ```
 
 請問，這三種寫法分別代表什麼意思呢？
+冒號靠右邊:Symbol
+冒號靠左邊:物件
+兩邊都有:物件使用Symbol
 
 ## Rails 題目 (30 分)
 
