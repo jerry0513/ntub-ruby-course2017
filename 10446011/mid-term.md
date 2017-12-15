@@ -100,9 +100,9 @@ user_profile = {name: "kk", age: 18, blood_type: :b_negative}
 ## Rails 題目 (30 分)
 
 1. (10 分) 請簡述 `bundle install` 指令的用途。
-
+檢查Gem和套件是否已安裝，並安裝
 2. (10 分) 請說明 `rails db:migrate` 這個指令的用途是什麼？
-
+將Migration 檔案轉換成資料表
 3. (10 分) 假設某個 Controller 的程式碼如下：
 
 ```ruby
@@ -122,6 +122,8 @@ end
 請問：
 - 第 3 行的 `@books` 前面的那個 `@` 是什麼意思？如果把 `@` 拿掉會發生什麼事？
 - 第 7 行以及第 8 行的 `@book`，如果把 `@` 拿掉會發生什麼事？為什麼？
+第3行:實體變數，發生錯誤，books只會在index裡有效。
+第7、8行:不會，因為在同一個區域。
 
 ## Git 題目 (20 分)
 
